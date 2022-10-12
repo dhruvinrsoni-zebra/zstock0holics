@@ -1,7 +1,11 @@
 # zstock0holics
 
 1. Building the project
-> mvnw clean install
+```
+npm install
+npm run start
+mvnw clean install
+```
 
 2. Dockerization
 ```
