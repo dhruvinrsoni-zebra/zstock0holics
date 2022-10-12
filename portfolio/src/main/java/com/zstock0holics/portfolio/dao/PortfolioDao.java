@@ -10,11 +10,11 @@ import com.zstock0holics.portfolio.entity.User;
 import com.zstock0holics.portfolio.entity.UserStock;
 
 @Repository
-public class StockDao {
+public class PortfolioDao {
 	List<Stock> stocks = new ArrayList<>();
 	List<UserStock> userStock = new ArrayList<>();
 	
-	public StockDao() {
+	public PortfolioDao() {
 		User u = new User(1, "DVGB", "DVGB@zebra.com", null, 1000, 10);
 		Stock zebra = new Stock(2, "zebra", "zebra", 1000000, 1000.00, 995.00);
 		Stock icici = new Stock(3, "icici bank", "icici", 1000000, 1000.00, 995.00);
@@ -44,9 +44,6 @@ public class StockDao {
 		userStock.add(us6);
 	}
 	
-	public List<Stock> getStock() {
-		return stocks;
-	}
 	
 	public List<UserStock> getUserStock() {
 		return userStock;
