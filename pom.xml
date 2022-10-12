@@ -17,6 +17,7 @@
 		<java.version>1.8</java.version>
 		<spring-boot-starter.version>2.7.4</spring-boot-starter.version>
 		<spring-boot-starter-test.version>2.7.4</spring-boot-starter-test.version>
+		<spring-boot-starter-web.version>2.7.4</spring-boot-starter-web.version>
 	</properties>
 	<repositories></repositories>
 	<profiles>
@@ -77,6 +78,11 @@
 				<version>${spring-boot-starter-test.version}</version>
 				<scope>test</scope>
 			</dependency>
+			 <dependency>
+		      <groupId>org.springframework.boot</groupId>
+		      <artifactId>spring-boot-starter-web</artifactId>
+		      <version>${spring-boot-starter-web.version}</version>
+		    </dependency>
 		</dependencies>
 	</dependencyManagement>
 	
