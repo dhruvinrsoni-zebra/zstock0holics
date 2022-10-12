@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.zstock0holics.portfolio.entity.Stock;
 import com.zstock0holics.portfolio.entity.UserStock;
-import com.zstock0holics.portfolio.service.StockService;
+import com.zstock0holics.portfolio.service.PortfolioService;
 
 @RestController(value="zstocks")
-public class StockController {
+public class PortfolioController {
 
 	@Autowired
-	StockService stockService;
+	PortfolioService portfolioService;
 	
 	@GetMapping
 	public String welcome() {
@@ -22,13 +22,10 @@ public class StockController {
 		return "welcome two z stocks";
 	}
 	
-	@GetMapping("stock")
-	public List<Stock> get() {
-		return stockService.getStock();
-	}
-	
 	@GetMapping("userStock")
 	public List<UserStock> getUserStock() {
-		return stockService.getUserStock();
+		return portfolioService.getUserStock();
 	}
+	
+	
 }
