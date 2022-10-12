@@ -39,7 +39,7 @@ export class TodoComponent implements OnInit {
           .subscribe (
             data => {
               console.log(data)
-              this.router.navigate(['todos'])
+              this.router.navigate(['myStocks'])
             }
           )
     } else {
@@ -47,7 +47,7 @@ export class TodoComponent implements OnInit {
           .subscribe (
             data => {
               console.log(data)
-              this.router.navigate(['todos'])
+              this.router.navigate(['myStocks'])
             }
           )
     }

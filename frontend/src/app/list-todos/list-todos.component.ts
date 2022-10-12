@@ -22,6 +22,9 @@ export class ListTodosComponent implements OnInit {
 
   todos: Todo[]
 
+  myStocks: any[]
+  allStocks: any[]
+
   message: string
 
   // = [
@@ -47,32 +50,36 @@ export class ListTodosComponent implements OnInit {
     this.refreshTodos();
   }
 
+  // refreshTodos(){
+  //   this.todoService.retrieveALLSTOCKS().subscribe(
+  //     response => {
+  //       console.log(response);
+  //       this.todos = response;
+  //     }
+  //   )
+  // }
   refreshTodos(){
-    this.todoService.retrieveAllTodos('in28minutes').subscribe(
-      response => {
-        console.log(response);
-        this.todos = response;
-      }
-    )
+    this.allStocks = this.todoService.retrieveMyStocks();
+    console.log(this.allStocks[0])
   }
 
-  deleteTodo(id) {
-    console.log(`delete todo ${id}` )
-    this.todoService.deleteTodo('in28minutes', id).subscribe (
-      response => {
-        console.log(response);
-        this.message = `Delete of Todo ${id} Successful!`;
-        this.refreshTodos();
-      }
-    )
-  }
+  // deleteTodo(id) {
+  //   console.log(`delete todo ${id}` )
+  //   this.todoService.deleteTodo('in28minutes', id).subscribe (
+  //     response => {
+  //       console.log(response);
+  //       this.message = `Delete of Todo ${id} Successful!`;
+  //       this.refreshTodos();
+  //     }
+  //   )
+  // }
 
   updateTodo(id) {
     console.log(`update ${id}`)
-    this.router.navigate(['todos',id])
+    // this.router.navigate(['todos',id])
   }
 
   addTodo() {
-    this.router.navigate(['todos',-1])
+    // this.router.navigate(['todos',-1])
   }
 }

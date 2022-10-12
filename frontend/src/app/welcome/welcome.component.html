@@ -1,0 +1,36 @@
+<h1> ALL Stocks </h1>
+
+<!-- <div class="alert alert-success" *ngIf='message'>{{message}}</div> -->
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <!-- <th>Name</th> -->
+        <th>Symbol</th>
+        <th>Quantity</th>
+        <th>Current Price</th>
+        <th>Closing Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!--   for (Todo todo: todos) {  -->
+              <tr *ngFor="let todo of allStocks">
+                <td>{{todo.stockId}}</td>
+                <!-- <td>{{todo.stockName}}</td> -->
+                <td><div>{{todo.stockSymbol}}</div><small>({{todo.stockName}})</small></td>
+                <td>{{todo.stockQuantity}}</td>
+                <td>{{todo.currentPrice}}</td>
+                <td>{{todo.closingPrice}}</td>
+              </tr>
+      <!-- } -->
+    </tbody>
+
+  </table>
+
+  <!-- <div class="row">
+      <button (click)="addTodo()" class="btn btn-success">Add</button>
+  </div> -->
+
+</div>

@@ -10,12 +10,12 @@ import { ErrorComponent } from './error/error.component';
 
 // welcome 
 const routes: Routes = [
-  { path: '', component: LoginComponent  },//canActivate, RouteGuardService
+  { path: '', component: WelcomeComponent  },//canActivate, RouteGuardService
   { path: 'login', component: LoginComponent },
-  { path: 'welcome/:name', component: WelcomeComponent, canActivate:[RouteGuardService]},
-  { path: 'todos', component: ListTodosComponent, canActivate:[RouteGuardService] },
-  { path: 'logout', component: LogoutComponent, canActivate:[RouteGuardService] },
-  { path: 'todos/:id', component: TodoComponent, canActivate:[RouteGuardService] },
+  // { path: 'home/:name', component: WelcomeComponent, canActivate:[RouteGuardService]},
+  { path: 'myStocks', component: ListTodosComponent},
+  { path: 'logout', component: LogoutComponent},
+  // { path: 'todos/:id', component: TodoComponent, canActivate:[RouteGuardService] },
 
   { path: '**', component: ErrorComponent }
 ];

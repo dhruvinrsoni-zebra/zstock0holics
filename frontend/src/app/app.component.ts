@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todo';
-  message = 'Welcome to in28Minutes';
+  message = 'Welcome to zStockOholics';
 }
