@@ -15,3 +15,4 @@ cd ..
 cd stock
 docker build -t stock:latest .
 ```
+Run localhost:4200 in the browser to access the URL
