@@ -1,7 +1,9 @@
 cd portfolio
-docker build --tag portfolio:latest .
+call create-portfolio-image.cmd
 cd ..
-cd stock
-docker build --tag stock:latest .
+
+cd stocks
+call create-stocks-image.cmd
 cd ..
-PAUSE
+
+echo %CMDCMDLINE%|find "%~f0">nul && PAUSE
