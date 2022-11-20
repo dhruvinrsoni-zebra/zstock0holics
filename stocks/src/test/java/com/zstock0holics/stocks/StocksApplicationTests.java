@@ -1,4 +1,4 @@
-package com.zstock0holics.stock;
+package com.zstock0holics.stocks;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

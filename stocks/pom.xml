@@ -8,7 +8,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>stock</artifactId>
+	<artifactId>stocks</artifactId>
 	<!-- <version>0.0.1-SNAPSHOT</version> -->
 	<name>Stocks</name>
 	<description>Stocks project for zstock0holics</description>
@@ -49,7 +49,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>stock</finalName>
+		<finalName>stocks</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

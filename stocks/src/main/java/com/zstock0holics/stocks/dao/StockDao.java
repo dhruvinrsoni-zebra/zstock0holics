@@ -1,13 +1,13 @@
-package com.zstock0holics.stock.dao;
+package com.zstock0holics.stocks.dao;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.zstock0holics.stock.entity.Stock;
-import com.zstock0holics.stock.entity.User;
-import com.zstock0holics.stock.entity.UserStock;
+import com.zstock0holics.stocks.entity.Stock;
+import com.zstock0holics.stocks.entity.User;
+import com.zstock0holics.stocks.entity.UserStock;
 
 @Repository
 public class StockDao {

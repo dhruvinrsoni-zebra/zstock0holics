@@ -1,4 +1,4 @@
-package com.zstock0holics.stock.entity;
+package com.zstock0holics.stocks.entity;
 
 import java.util.Arrays;
 import java.util.Objects;

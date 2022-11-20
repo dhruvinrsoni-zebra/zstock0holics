@@ -40,15 +40,15 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
-				<module>stock</module>
+				<module>stocks</module>
 				<module>portfolio</module>
 			</modules>
 		</profile>
 
 		<profile>
-			<id>stock</id>
+			<id>stocks</id>
 			<modules>
-				<module>stock</module>
+				<module>stocks</module>
 			</modules>
 		</profile>
 
@@ -65,7 +65,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>com.zstock0holics</groupId>
-				<artifactId>stock</artifactId>
+				<artifactId>stocks</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
