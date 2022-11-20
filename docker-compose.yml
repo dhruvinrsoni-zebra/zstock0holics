@@ -1,0 +1,45 @@
+version: '2'
+# networks:
+  # mynetwork: 
+networks:
+  zstock0holics-network:
+    # driver: bridge
+    # ipam:
+     # config:
+       # - subnet: 10.5.0.0/16
+         # gateway: 10.5.0.1
+services:
+    portfolio:
+        image: portfolio:latest
+        ports:
+        -   9081:9081
+        # environment:
+        # - MYSQL_ROOT_PASSWORD=root
+        # volumes:
+        # - "./sql:/docker-entrypoint-initdb.d"
+        # networks:
+          # pizzawale-network:
+            # ipv4_address: 10.5.0.5
+        #command: /bin/bash -c "/mysqlscript/mysqlscript.sh"
+        # networks:
+        # - mynetwork
+        #command:
+        #- "/usr/bin/mysql --user=root --password=root < /sql/Pizzawale.20190821.0922.sql"
+    stocks:
+        image: stocks:latest
+        ports:
+        -   9080:9080
+        # volumes: 
+        # - "./tomcatscript/:/temp/"
+        # - "./war/:/usr/local/tomcat/webapps/"
+        # networks:
+          # pizzawale-network:
+            # ipv4_address: 10.5.0.6
+        # depends_on:
+         # - mysql
+        # command: /bin/bash -c "/temp/tomcatscript.sh && catalina.sh run"
+        #entrypoint: ["/bin/bash", "-c","'/tomcatscript/tomcatscript.sh && catalina.sh run'"]
+        # environment:
+            # SERVICE_URL: 'http://localhost/'
+        # networks:
+        # - mynetwork
