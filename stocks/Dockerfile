@@ -7,4 +7,6 @@ COPY target/stocks.jar .
 #VOLUME /mount
 EXPOSE 9080
 
+LABEL org.opencontainers.image.source=https://github.com/dhruvinrsoni-zebra/zstock0holics
+
 ENTRYPOINT ["java", "-jar", "stocks.jar"]
