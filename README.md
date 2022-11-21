@@ -1,18 +1,24 @@
 # zstock0holics
 
 1. Building the project
-```
-npm install
-npm run start
-mvnw clean install
-```
+
+    | Files| Purpose|
+    | ------------- | ------------- |
+    | build-all.cmd | Builds all services of multiple modules together  |
+    | build.cmd     | Builds each services of all modules one by one    |
 
 2. Dockerization
-```
-cd portfolio
-docker build -t portfolio:latest .
-cd ..
-cd stock
-docker build -t stock:latest .
-```
+
+    > Use the `create-images.cmd` to create the docker images.
+
+3. Running the images
+    - The script `run-images.cmd` will run the docker images in a modular fashion. 
+  
+    ***or***
+    - Run the script `docker-compose-up.cmd` to deploy the docker images using compose locally.
+  
+4. Building frontend
+    - Navigate to frontend folder and run `npm run build`
+    
+
 Run localhost:4200 in the browser to access the URL
