@@ -10,7 +10,7 @@ networks:
          # gateway: 10.5.0.1
 services:
     portfolio:
-        image: portfolio:latest
+        image: portfolio:v1.0
         ports:
         -   9081:9081
         # environment:
@@ -26,7 +26,7 @@ services:
         #command:
         #- "/usr/bin/mysql --user=root --password=root < /sql/Pizzawale.20190821.0922.sql"
     stocks:
-        image: stocks:latest
+        image: stocks:v1.0
         ports:
         -   9080:9080
         # volumes: 
