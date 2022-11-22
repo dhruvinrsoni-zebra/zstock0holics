@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.zstock0holics.stocks.entity.Stock;
 import com.zstock0holics.stocks.service.StockService;
 
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins={"http://localhost:4200","http://localhost:9081"})
 @RestController
 public class StockController {
 	
